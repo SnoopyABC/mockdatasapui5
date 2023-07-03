@@ -1,0 +1,26 @@
+<mvc:View controllerName="mockdatatraining.controller.aviaCompanyList"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table id="aviasCompanysTable" items="{/Avias}">
+                <columns>
+                    <Column >
+                        <Text text="id"></Text>
+                    </Column>
+                    <Column >
+                        <Text text="Name"></Text>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{Id}"></Text>
+                            <Text text="{name}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
